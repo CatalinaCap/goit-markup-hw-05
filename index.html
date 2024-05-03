@@ -54,7 +54,11 @@
           EFFECTIVE SOLUTIONS FOR<br />
           YOUR BUSINESS
         </h1>
-        <button class="button_index" type="button">Request our service</button>
+
+        <!-- <button class="button_index" type="button">Request our service</button> -->
+        <button data-modal-open class="button_index">
+          Request our service
+        </button>
       </section>
       <div class="icons">
         <svg class="header_antena" width="270px" height="120px">
@@ -105,11 +109,20 @@
 
       <!--What we do section with pictures-->
       <section class="information">
-        <h2>What we do</h2>
+        <h2 class="index_h2">What we do</h2>
         <div class="pictures_second_part">
           <img src="./images/first-img.jpg" alt="computer" width="370" />
+
           <img src="./images/second-img.jpg" alt="phone" width="370" />
+
           <img src="./images/third-img.jpg" alt="design" width="370" />
+        </div>
+        <div class="paragraph_info">
+          <ul class="paragraph_list">
+            <li class="title">DESKTOP APPS</li>
+            <li class="title">MOBILE APPS</li>
+            <li class="title">DESIGN SOLUTIONS</li>
+          </ul>
         </div>
       </section>
       <!--Team-->
@@ -358,5 +371,18 @@
         </ul>
       </div>
     </footer>
+    <div data-modal class="is-hidden">
+      <div data-modal-content>
+        <button data-modal-close type="button">
+          <svg width="11px" height="11px">
+            <use
+              href="images/icons.svg/symbol-defs-2.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
