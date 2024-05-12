@@ -43,10 +43,9 @@ body {
 .choose_section ul {
   display: flex;
   gap: 50px;
-  margin-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
-.link {
+.choose_section a {
   text-decoration: none;
   color: var(--light-black);
   font-size: 14px;
@@ -54,8 +53,11 @@ body {
   font-family: var(--primary-font);
   position: relative;
 }
-.link::after,
-.link:after {
+.choose_section a:hover {
+  color: var(--blue);
+}
+.choose_section a::after,
+.choose_section a:after {
   content: '';
   height: 4px;
   border-radius: 20px;
@@ -67,10 +69,11 @@ body {
   transition-property: width;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover::after,
-.link:active::after {
+.choose_section a:hover::after,
+.choose_section a:active::after {
   width: 100%;
 }
+
 .send-email {
   text-decoration: none;
   color: var(--gray);
@@ -165,7 +168,7 @@ body {
   flex-wrap: wrap;
   padding-left: 0px;
 }
-.cards {
+.overlay_image {
   position: relative;
   overflow: hidden;
 }
@@ -237,12 +240,13 @@ a {
 .header__section {
   height: 80px;
 }
-.header_phone {
-  margin-right: -50px;
+/*.header_phone {
+  margin-right: 0;
 }
 .header_envelope {
-  margin-right: -45px;
+  margin-right: 0;
 }
+*/
 .index_logo {
   color: var(--black);
   font-family: var(--secondary-font);
@@ -264,9 +268,8 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
-.link_index::after,
 .link_index::after {
   content: '';
   height: 4px;
@@ -279,9 +282,10 @@ a {
   transition-property: width;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link_index:hover::after,
-.link_index:active::after {
+
+.link_index:active:after {
   width: 100%;
+  color: var(--blue);
 }
 
 .index_logo {
@@ -551,18 +555,27 @@ h2 {
   gap: 30px;
   margin-bottom: 94px;
 }
-.paragraph_list {
+,
+.paragraph_info {
+  position: absolute;
+}
+.paragraph_info > .arrange {
+  overflow: hidden;
   list-style: none;
   display: flex;
   justify-content: space-around;
   position: relative;
-  top: -130px;
-  left: -30px;
+  top: -78px;
+  left: 0;
   font-size: 14px;
   font-family: var(--primary-font);
   letter-spacing: 0.03em;
   color: var(--white);
   align-items: center;
+
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 .title {
   background-color: rgba(47, 48, 58, 0.8);

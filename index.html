@@ -28,22 +28,26 @@
           </ul>
         </nav>
         <div class="contact_header">
-          <svg class="header_envelope" width="16" height="12">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-opt" />
-          </svg>
-
-          <a class="link_contact" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
-
-          <svg class="header_phone" width="10" height="16">
-            <use
-              href="./images/icons.svg/symbol-defs.svg#icon-smartphone-opt"
-            />
-          </svg>
-          <a class="link_contact_phone" href="tel:+12127724150"
-            >+1 212-772-4150</a
-          >
+          <div class="svg_contact_header">
+            <svg class="header_envelope" width="16" height="12">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-envelope-opt"
+              />
+            </svg>
+            <a class="link_contact" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </div>
+          <div class="svg_contact_header">
+            <svg class="header_phone" width="10" height="16">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-smartphone-opt"
+              />
+            </svg>
+            <a class="link_contact_phone" href="tel:+12127724150"
+              >+1 212-772-4150</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -111,12 +115,20 @@
       <section class="information">
         <h2 class="index_h2">What we do</h2>
         <div class="pictures_second_part">
-          <img src="./images/first-img.jpg" alt="computer" width="370" />
-
-          <img src="./images/second-img.jpg" alt="phone" width="370" />
-
-          <img src="./images/third-img.jpg" alt="design" width="370" />
+          <div class="paragraph_info">
+            <img src="./images/first-img.jpg" alt="computer" width="370" />
+            <p class="arrange">DESKTOP APPS</p>
+          </div>
+          <div class="paragraph_info">
+            <img src="./images/second-img.jpg" alt="phone" width="370" />
+            <p class="arrange">MOBILE APPS</p>
+          </div>
+          <div class="paragraph_info">
+            <img src="./images/third-img.jpg" alt="design" width="370" />
+            <p class="arrange">DESIGN SOLUTIONS</p>
+          </div>
         </div>
+        <!--
         <div class="paragraph_info">
           <ul class="paragraph_list">
             <li class="title">DESKTOP APPS</li>
@@ -124,6 +136,7 @@
             <li class="title">DESIGN SOLUTIONS</li>
           </ul>
         </div>
+        -->
       </section>
       <!--Team-->
       <section class="last_part_index">
