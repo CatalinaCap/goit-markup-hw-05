@@ -387,15 +387,76 @@
     <div data-modal class="is-hidden">
       <div data-modal-content>
         <button data-modal-close type="button">
-          <svg width="11px" height="11px">
+          <!--
+    !      <svg width="11px" height="11px">
             <use
               href="images/icons.svg/symbol-defs-2.svg#icon-close-black-18dp-2-1"
             ></use>
-          </svg>
+          </svg>-->
+          X
         </button>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form__position"
+            >Name
+            <input type="text" name="username" class="modal-form__input" />
+            <svg width="12px" height="12px">
+              <use
+                href="./images/icons.svg/symbol-defs.2.svg#icon-email-black-18dp-1"
+              />
+            </svg>
+          </label>
+          <label class="modal-form__position">
+            Telephone
+            <input type="tel" name="userphone" class="modal-form__input" />
+            <svg width="12px" height="12px">
+              <use
+                href="./images/icons.svg/symbol-defs-2.svg#icon-phone-black-18dp-1"
+              />
+            </svg>
+          </label>
+          <label class="modal-form__position">
+            E-mail
+            <input type="email" name="useremail" class="modal-form__input" />
+            <svg width="12px" height="12px">
+              <use
+                href="./images/icons.svg/symbol-defs-2.svg#icon-email-black-18dp-1"
+              ></use>
+            </svg>
+          </label>
+          <label class="modal-form__position">
+            Comments
+            <textarea
+              name="mesaj"
+              placeholder="Enter the text"
+              class="modal-form__comments"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="modal-form__position modal-form__checked"
+            ><input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              class="modal-form__input"
+            />
+            <span class="replace-checkbox modal-checkbox__position">
+              <svg>
+                <use
+                  href="./images/icons.svg/symbol-defs-2.svg#icon-Vector"
+                ></use>
+              </svg>
+            </span>
+            I agree with the letter and accept the
+            <a href="#" class="condition">Terms and Conditions</a>
+          </label>
+
+          <button type="submit" class="modal-form__btn">Send</button>
+        </form>
       </div>
     </div>
-
     <script src="./modal.js"></script>
   </body>
 </html>
